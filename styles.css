@@ -94,6 +94,7 @@ h2
     border: 1px solid #FFBA00;
     box-shadow: 0 0 25px 5px #FEDC22
 }
+
 /**********PROJECT DESCRIPTION SECTION**********/
 .Summary_Title
 {
@@ -110,4 +111,83 @@ h2
     text-align: center;
 }
 
+/**********ROADMAP SECTION**********/
+.roadmap
+{
+    display: flex;
+}
+
+/*****Left section of map*****/
+.left_map_side
+{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.Left_Timeline_Event
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: right;
+    width: 200px;
+    height: 150px;
+    margin-right: 48px;
+    
+}
+
+/*****Middle section of map*****/
+.Map_Line
+{
+    background-color: black;
+    width: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.Map_Circle,
+.First_Map_Circle
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #FFBA00;
+    box-shadow: 0 0 25px 5px #FEDC22
+}
+
+.First_Map_Circle
+{
+    margin-top: 25px;
+}
+/*****Right section of map*****/
+.right_map_side
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Right_Timeline_Event
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 200px;
+    height: 150px;
+    margin-left: 48px;
+    margin-top: 150px;
+}
+/*****Contnent section of map*****/
+.Timeline_Title
+{
+    margin-bottom: 0;
+}
+
+.Timeline_Text
+{
+    margin-top: 0;
+}
 
