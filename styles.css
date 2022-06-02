@@ -1,0 +1,70 @@
+body
+{
+    margin: 0;
+}
+
+.content_container
+{
+    background-color: #2d0352;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+/**********TOP OF PAGE**********/
+.Project_Logo
+{
+    width: 10vw;
+    height: auto;
+
+    margin-top: 32px;
+}
+
+/*Ensuring all text is the same font*/
+.Landing_Page_Title,
+.Landing_Page_Subtitle,
+.Summary_Title,
+.Project_Summary1,
+.Project_Summary2,
+h2
+{
+    font-family: 'Akira Expanded', sans-serif;
+    color: white;
+}
+
+.Landing_Page_Title
+{
+    margin-bottom: 0;
+    text-shadow:  /*Adding a black outline to the title*/
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+    
+    letter-spacing: 4px;
+}
+
+.Landing_Page_Subtitle
+{
+    margin: 0;
+    color: black;
+}
+
+/**********PROJECT DESCRIPTION SECTION**********/
+.Summary_Title
+{
+    margin-top: 160px;
+    letter-spacing: 7px;
+}
+
+.Project_Summary1,
+.Project_Summary2
+{
+    width: 50vw;
+    flex-grow: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+
