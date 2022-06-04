@@ -1,3 +1,11 @@
+/*Color pallete
+    #FEDC222 -Light yellow
+    #FFCE00 -Yellow
+    #FFBA00 -Darker yellow
+    #610DA9 -Purple
+    #2D0352 -Dark purple
+*/
+
 body
 {
     margin: 0;
@@ -5,7 +13,7 @@ body
 
 .content_container
 {
-    background-image: linear-gradient(#610DA9 10%, #2D0352);
+    background-color: #260146;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -16,12 +24,12 @@ body
 /**********TOP OF PAGE**********/
 .Project_Logo
 {
-    width: 10vw;
-    height: auto;
+    width: 150px;
+    height: 150px;
     margin-top: 32px;
 }
 
-/*Ensuring all text is the same font*/
+/*Ensuring all text is the same font and color*/
 .Landing_Page_Title,
 .Landing_Page_Subtitle,
 .Summary_Title,
@@ -35,70 +43,38 @@ h2
 
 .Landing_Page_Title
 {
+    margin-top: 0;
     margin-bottom: 0;
-    text-shadow:  /*Adding a black outline to the title*/
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
-    
-    letter-spacing: 4px;
+    color: #FFBA00;
+    font-size: 40px;
 }
 
 .Landing_Page_Subtitle
 {
-    margin: 0;
-    color: black;
+    margin-top: 12px;
 }
 
-/**********SECTION THAT SEPERATES THE TITLE AND MAIN CONTENT**********/
-.Seperator_Container
-{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 75px;
-}
-.Left_Seperator_Line,
-.Right_Seperator_Line
-{
-    background-color: #FFBA00;
-    height: 1px;
-    width: 26vw;
-    box-shadow: 0 0 25px 15px #FEDC22
-}
-
-.Seperator_Circle
+.Icons_Container
 {
     display: flex;
+    gap: 29px;
+    width: 400px;
+    height: 50px;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 25px 20px #FEDC22
-}
-.Seperator_Circle,
-.Inner_Circle
-{
-    background-color: rgba(255, 255, 255, 0); 
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: 1px solid #FFBA00;
-    flex-shrink: 0;
+    margin-top: 16px;
 }
 
-.Inner_Circle
+.Icon
 {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #FFBA00;
-    box-shadow: 0 0 25px 5px #FEDC22
+    height: 50px;
+    width: auto;
 }
 
 /**********PROJECT DESCRIPTION SECTION**********/
+
 .Summary_Title
 {
-    margin-top: 75px;
+    margin-top: 300px;
     letter-spacing: 7px;
 }
 
@@ -112,9 +88,14 @@ h2
 }
 
 /**********ROADMAP SECTION**********/
+.Roadmap_Title
+{
+    margin-top: 300px;
+}
 .roadmap
 {
     display: flex;
+    height: 1500px;
 }
 
 /*****Left section of map*****/
@@ -123,18 +104,24 @@ h2
     display: flex;
     flex-direction: column;
     gap: 150px;
+    height: 1500px;
 }
 
-.Left_Timeline_Event
+.Left_Timeline_Event,
+.Right_Timeline_Event
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    text-align: right;
-    width: 200px;
+    justify-content: center;
+    width: 300px;
     height: 150px;
+}
+
+.Left_Timeline_Event
+{
+    text-align: right;
     margin-right: 48px;
-    
 }
 
 /*****Middle section of map*****/
@@ -145,7 +132,7 @@ h2
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 150px;
+    gap: 120px;
 }
 
 .Map_Circle,
@@ -154,40 +141,42 @@ h2
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    background-color: #610DA9;
     border: 1px solid #FFBA00;
     box-shadow: 0 0 25px 5px #FEDC22
 }
 
 .First_Map_Circle
 {
-    margin-top: 25px;
+    margin-top: 58px;
 }
 /*****Right section of map*****/
 .right_map_side
 {
     display: flex;
     flex-direction: column;
+    height: 1500px;
 }
 
 .Right_Timeline_Event
 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     text-align: left;
-    width: 200px;
-    height: 150px;
     margin-left: 48px;
     margin-top: 150px;
 }
 /*****Contnent section of map*****/
 .Timeline_Title
 {
+    color:#FFBA00;
+    font-size: 20px;
+    font-weight: 1000;
     margin-bottom: 0;
 }
 
 .Timeline_Text
 {
+    color: white;
+    font-size: 18px;
     margin-top: 0;
 }
 
